@@ -1,0 +1,17 @@
+---
+  dependencies: []
+  
+  galaxy_info:
+    author: brentwg
+    description: This role installs installs PowerShell on Linux.
+    company: "None"
+    license: "None"
+    min_ansible_version: 2.4
+    - name: Fedora
+      versions:
+      - 27
+    galaxy_tags:
+    - development
+    - microsoft
+    - powershell
+  
