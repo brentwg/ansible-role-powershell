@@ -1,0 +1,20 @@
+---
+  - hosts: all
+  
+    pre_tasks:
+      - name: Update apt cache
+        apt: update_cache=yes cache_valid_time=600
+        when: ansible_os_family == 'Debian'
+  
+      - name: Fix broken apt module for Ubuntu 1604
+        apt:
+          name: "{{ item }}"
+          state: present
+        with_items:
+        - python-simplejson
+        - aptitude
+        - apt-transport-https
+        when: ansible_os_family == 'Debian'
+  
+    roles:
+      - role_under_test
