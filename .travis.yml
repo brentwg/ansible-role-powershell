@@ -18,5 +18,8 @@
     # Run tests
     - ${PWD}/tests/test.sh
   
+    # Display the powershell version
+    - docker exec --tty ${container_id} env TERM=xterm pwsh --version
+    
   notifications:
     webhooks: https://galaxy.ansible.com/api/v1/notifications/
