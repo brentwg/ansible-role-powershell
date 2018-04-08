@@ -7,6 +7,10 @@
     company: "None"
     license: "None"
     min_ansible_version: 2.4
+    platforms:
+    - name: EL
+      versions:
+      - 7
     - name: Fedora
       versions:
       - 27
