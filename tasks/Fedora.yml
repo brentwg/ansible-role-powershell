@@ -12,8 +12,8 @@
     package:
       name: "{{ item }}"
       state: present
-      with_items:
-        - compat-openssl10
+    with_items:
+      - compat-openssl10
 
   - name: Install the application package (Fedora)
     package:
