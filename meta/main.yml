@@ -17,7 +17,6 @@
     - name: Ubuntu
       versions:
       - xenial
-      - artful
     galaxy_tags:
     - development
     - microsoft
