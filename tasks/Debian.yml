@@ -5,7 +5,7 @@
 
   - name: Create the APT repository (Debian)
     apt_repository:
-      repo: deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/{{ ansible_distribution_version }}/prod.list {{ ansible_distribution_release }} main
+      repo: deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/{{ ansible_distribution_version }}/prod {{ ansible_distribution_release }} main
       filename: "{{ yum_repo_name }}"
 
   - name: Install the application package (Debian)
