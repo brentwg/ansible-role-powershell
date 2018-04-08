@@ -5,4 +5,4 @@
   yum_repo_description: packages-microsoft-com-prod
   yum_repo_baseurl: https://packages.microsoft.com/rhel/7/prod/
   
-  code_repo_key: "https://packages.microsoft.com/keys/microsoft.asc"
+  repo_key: "https://packages.microsoft.com/keys/microsoft.asc"
